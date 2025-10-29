@@ -103,9 +103,9 @@ console.log(pets); // ['cat','dog','fish','parrot']
 console.log(numbers); // [1,10,100,25,40,5]
 
 //splice() - adds/removes elements from an array at a specified index and returns the removed elements as a new array. This method changes the original array.
-var fruits = ['apple','banana','mango','orange'];
-fruits.splice(2,1,'pine apple','grapes'); // at index 2 remove 1 element and add 'pine apple' and 'grapes'
-console.log(fruits) // ['apple','banana','pine apple','grapes','orange']
+var fruits1 = ['apple','banana','mango','orange'];
+fruits1.splice(2,1,'pine apple','grapes'); // at index 2 remove 1 element and add 'pine apple' and 'grapes'
+console.log(fruits1) // ['apple','banana','pine apple','grapes','orange']
 
 //slice() - returns a new array containing a portion of the original array from the start index to end index (end index not included). This method does not change the original array.
 var vegetables = ['carrot','potato','tomato','onion','cabbage'];
@@ -147,3 +147,47 @@ console.log(letters.lastIndexOf('z')); // -1
 var numbers = [10,20,30,40,50];
 var foundNumber = numbers.find((element) => element > 25);
 console.log(foundNumber); // 30
+
+//findIndex() - returns the index of the first element in an array that satisfies a provided testing function. Otherwise -1 is returned
+numbers = [10,20,30,40,50];
+var foundIndex = numbers.findIndex((element) => element > 20);
+console.log(foundIndex); // 2
+
+//includes() - checks if an array contains a specified element and returns true or false
+//it also takes an optional second parameter as the starting index
+var fruits2 = ['apple','banana','mango'];
+console.log(fruits2.includes('banana')); // true
+console.log(fruits2.includes('apple',1)); // false
+
+
+
+
+
+//entries() - returns a new array iterator object that contains key/value paris for each index in the array. and this wil not changes the original array.
+var colors1 = ['red','green','blue'];
+var colorsEntries = colors1.entries();
+console.log(colorsEntries);
+for (let eachEntry of colorsEntries){
+    console.log(eachEntry);
+}
+
+//every() - tests whether all elements in the array pass the test implemented by the provided function. It return a boolean value and does not change the original array.
+var evenNumbers = [2,4,6,8,10];
+var isAllEven = evenNumbers.every((element) => element % 2 === 0);
+console.log(isAllEven); // true
+
+var mixedNumbers = [1,2,3,4,5];
+var isAllEvenMixed = mixedNumbers.every((element) => element % 2 === 0);
+console.log(isAllEvenMixed); // false
+
+//some() - tests whether at least one element in the array passes the test implemented by the provided function. It return a boolean value and does not change the original array.
+var multiplesOfThree = [4,6,19,13,17];
+var isMultipleOfThree = multiplesOfThree.some((element) => element % 3 === 0);
+console.log(isMultipleOfThree); // true
+
+//fill() - fills all the elements of an array from a start index to an end index with a static value. This method changes the original array.
+//if index is not provided it fills the entire array
+var cars1 = ['BMW','Audi','Mercedes','Toyota'];
+cars1.fill('Honda',1,3);
+console.log(cars1); // ['BMW','Honda','Honda','Toyota']
+
