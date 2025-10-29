@@ -1,0 +1,12 @@
+First programming language that is built specially for browser and website applications.
+
+Easy to learn language
+
+Asynchronous programming language
+
+Dom manupulations
+
+Greate developer community thus has good support
+
+Big companies like Uber,Paypal,LinkedIn uses javascript
+

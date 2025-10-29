@@ -1,0 +1,2 @@
+javascript is a single threaded language meaning it can execute one thing at a time.
+

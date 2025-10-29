@@ -1,0 +1,1 @@
+var mainHeading = document.getElementById('mainHeading');

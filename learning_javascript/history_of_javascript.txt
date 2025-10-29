@@ -1,0 +1,17 @@
+When internet was getting propular web browsing was getting propular 
+
+Netscape company in 1994 created Netscape navigator browser and thought if it allows developer to developers
+web based applications and if thier browser can process it it could be a great thing.
+
+So one of the developer Brendan Eich created javascript in 10 days
+
+In the early days js was only built to work for web based applications whereas ruby,java where were used for 
+server based and desktop applications.
+
+But now using js we can built browser side and server side applications.
+
+Few years later Netscape company sold out and js became weak.
+
+In 2005 Ryan Dahl created Node.js, a js runtime envrionment but outside of the browser. The reason is to
+run the js at server side as well.
+
