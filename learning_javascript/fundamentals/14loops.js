@@ -9,6 +9,10 @@ for (let i = 0; i < 5; i++) {
     console.log("Iteration number: " + i);
 }
 
+for (let eachNumber = 0; eachNumber < 5; eachNumber++){
+    console.log('current number is ' + eachNumber);
+}
+
 //here, i is initialized to 0, the loop continues as long as i is less than 5, and i is incremented by 1 after each iteration
 //when i becomes 5, the condition fails and the loop stops
 
@@ -23,6 +27,12 @@ let j = 0;
 while (j < 5) {
     console.log("Iteration number: " + j);
     j++; //updating the condition
+}
+
+let currentValue = 0;
+while(k < 2){
+    console.log('current while loop iteration is ' + currentValue);
+    currentValue++;
 }
 
 //always remember to update the condition inside the loop, otherwise it will create an infinite loop

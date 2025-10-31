@@ -191,3 +191,49 @@ var cars1 = ['BMW','Audi','Mercedes','Toyota'];
 cars1.fill('Honda',1,3);
 console.log(cars1); // ['BMW','Honda','Honda','Toyota']
 
+//copyWithin() - copies a sequence of array elements within the array to the position starting at target index. This method changes the original array.
+//target index - index to copy the sequence to
+//start index - index to start copying from (default is 0)
+//end index - index to end copying (default is array.length) end index is not included
+var numbers2 = [1,2,3,4,5];
+numbers2.copyWithin(0,3,5); // copy elements from index 3 to 5 and paste starting at index 0
+console.log(numbers2); // [4,5,3,4,5]
+
+var animals5 = ['cat','dog','elephant','tiger','lion'];
+animals5.copyWithin(1,3,5);
+console.log(animals5); // ['cat','tiger','lion','tiger','lion']
+
+//valueOf() - returns the array itself
+var veggies = ['carrot','potato','tomato'];
+console.log(veggies.valueOf()); // ['carrot','potato','tomato']
+
+//forEach() - executes a provided function once for each array element. This method does not change the original array.
+var cities = ['New York','Los Angeles','Chicago'];
+cities.forEach((city) => console.log(city));
+var scores = [90,80,70];
+scores.forEach((element) => element += 5);
+console.log(scores); // [90,80,70]
+
+//map() - creates a new array with the results of calling a provided function on every element in the calling array. This method does not change the original array.
+var numbers6 = [1,2,3,4,5];
+var multipleOfTen = numbers6.map((element) => element * 10);
+console.log(multipleOfTen); // [10,20,30,40,50]
+
+//difference between forEach and map
+//forEach does not return a new array where as map returns a new array
+
+//filter() - creates a new array with only the elements that pass the test implemented by the provided function. This method does not change the original array.
+var randomNumbers = [1,2,45,-98,23,-7,0,34];
+var multipleOfTwo = randomNumbers.filter((element) => element % 2 === 0);
+console.log(multipleOfTwo); // [2,-98,0,34]
+
+//reduce() - executes a reducer function on each element of the array, resulting in a single output value. This method does not change the original array.
+//syntax: array.reduce((accumulator, currentValue) => {}, initialValue);
+var values = [10,20,30,40];
+var reducedValue = values.reduce((acc,current) => acc + current, 10); // initial value is 10
+console.log(reducedValue); // 110
+
+//from() - creates a new array from an array-like or iterable object
+var greet = 'Hello World';
+var greetArray = Array.from(greet);
+console.log(greetArray); // ['H','e','l','l','o',' ','W','o','r','l','d']
