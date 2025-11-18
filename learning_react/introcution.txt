@@ -1,0 +1,22 @@
+What is React?
+
+React is javascript library used to create web applications
+React is not a framework. It's just a javascript library.
+React mainly focus on UI
+
+Why to learn React?
+
+React is created and maintained by Facebook
+Huge community and many other companies use React
+High support over internet
+
+Features of React?
+
+Component based architecture. everthing in react is a component.
+These components then can be reused.
+React is declarative. meaning we say what we want, and react dom library will build the actual UI
+Eg: Go to an artist and say him to draw a landscape view painting. Now it's artist job to how to draw the landscape.
+React will efficiently handle updating and rendering the components.
+Integrate React is anyother applications. 
+React native used to mobile applications.
+

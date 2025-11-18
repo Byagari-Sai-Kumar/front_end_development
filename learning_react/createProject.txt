@@ -1,0 +1,29 @@
+open NodeJS and navigate to the desired folder where you want your project to be places and use below commands
+
+//To create a new react app
+npx create-react-app hello-world
+
+here when we install NodeJS, npm will
+
+//To start Development server
+cd hello-world
+npm start
+
+//To build the app into static files to production
+npm run build
+
+//To start test runner
+npm test
+
+//diff between npx and npm
+
+//when we install node npx node package runner tool automatically get installed and it will run the libraries without
+actually installing them
+
+where as npm node package manager will explicitily install the package globally
+
+npm install create-react-app -get
+
+npm create-react-app hello-world
+
+npm start

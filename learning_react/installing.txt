@@ -1,0 +1,4 @@
+To install react we need two things
+
+1. NodeJS
+2. Intigrated Development Environment (IDE)
