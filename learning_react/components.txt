@@ -1,0 +1,37 @@
+In react everything is component.
+
+components are the build blocks of the react application.
+
+We can have compoenent inside a component called nested components.
+
+In simple words components are the javascript functions that returns html
+
+Components are reuseable any number of times.
+
+There are two types of components in react
+
+1. Stateless Functional Components
+
+These are regular functions that take parameters (properties or props) and returns jsx like code
+
+use functional components as much as possible over class components
+
+Absence of this keyword
+
+Mainly responsible for UI
+
+Stateless/Dumb/Presentational
+
+2. Stateful Class Components
+
+These are ES6 classes where render menthod is must required to return the xml
+
+More feature rich
+
+Main their own private state or data
+
+complex UI logic
+
+provide life cycle methods
+
+Stateful/Smart/Container

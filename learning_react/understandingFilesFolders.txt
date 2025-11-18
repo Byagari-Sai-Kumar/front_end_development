@@ -1,0 +1,13 @@
+1. package.json - here all the packages are get installed and maintained.
+
+2. package-lock.json - here it ensures all the packages installations and we need not to change this file
+
+3. gitignore - git related ignorable things
+
+4. READEME.md - all the documentation related to this project
+
+5. node_modules - all the libraries used for react project get installed here
+
+6. public - index.html is the root of the project where all the react pages are going to render. since react is the 
+single page application this is the single index.html and all the pages are going to render here only.
+there is a div container and all the contents sits here.
