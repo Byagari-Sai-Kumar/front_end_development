@@ -1,0 +1,9 @@
+state is managed within the component.
+
+variables declared in the functional body.
+
+state can be changed.
+
+useState in functional component
+this.state in class component
+

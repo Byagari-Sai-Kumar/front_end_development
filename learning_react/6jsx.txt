@@ -1,0 +1,9 @@
+JSX is javascript xml
+
+It is the snyntax extension for the javascript
+
+write xml like code for elements and components
+
+JSX tags have tag name, attributes and children
+
+JSX untimately complies into js which is understood by the browser

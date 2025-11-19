@@ -1,0 +1,11 @@
+props are also called as properties or information that can be passed from the parent component to the child component
+
+props can be passed irrespective of the component type.
+
+In the parent component props are send as attributes and values and children
+
+in the child component props are access as props.attributeProperty or props.children
+
+in class component props are accessed using this keyword. this.props.propertyName
+
+props are immutable. saying that we cannot edit the values of the props in the child component
