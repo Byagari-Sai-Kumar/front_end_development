@@ -7,6 +7,8 @@ import { Greet,GoodMorning } from './components/Jsx/jsx';
 import {Car,Bike} from './components/Props/Cars';
 import GreetVisitors from './components/State/state';
 import Counter from './components/SetState/counter';
+import {GreetPeople,GreetPeopleClass} from './components/DestructuringPropsState/greet';
+import {Purchase,PurchaseClass} from './components/EventHandling/eventHandlingFunction';
 
 function App() {
   return (
@@ -41,7 +43,12 @@ function App() {
         <button>Click here to buy now</button>
       </Bike>
       <GreetVisitors/>
-      <Counter/>
+      <Counter helpValue="10"/>
+      <GreetPeople name="sai kumar" city="Hyderabad"/>
+      <GreetPeople name="ramesh" city="Mumbai"/>
+      <GreetPeopleClass name="Rajest" city="Banglore"/>
+      <Purchase/>
+      <PurchaseClass/>
     </div>
   );
 }

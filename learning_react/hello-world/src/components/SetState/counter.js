@@ -18,11 +18,27 @@ class Counter extends Component{
         },()=>{console.log(`current count is ${this.state.count}`)})
     }
 
+    increaseCountFive(){
+        //instead of directly passing state object as first arguement try passing it has a function 
+        //so that it uses prevState and update accordingly.
+        this.setState((prevState) => ({
+            count: prevState.count + 5
+        }))
+    }
+
+    increaseUsingHelpCounter(){
+        this.setState((prevState,props)=>({
+            count: prevState + props.helpValue
+        }))
+    }
+
     render(){
         return(
             <div>
                 <h1>Count - {this.state.count}</h1>
                 <button onClick={()=>this.increaseCount()}>Increment</button>
+                <button onClick={()=>this.increaseCountFive()}>Increase Five</button>
+                <button onClick={()=>this.increaseUsingHelpCounter()}>Use Help Counter</button>
             </div>
         );
     }
