@@ -2,13 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 //import {Greet} from './components/Greet/greet';
 //import Greet from './components/Greet/greet';
-import HelloWorld from './components/ClassComponent/helloWorld';
-import { Greet,GoodMorning } from './components/Jsx/jsx';
-import {Car,Bike} from './components/Props/Cars';
-import GreetVisitors from './components/State/state';
-import Counter from './components/SetState/counter';
-import {GreetPeople,GreetPeopleClass} from './components/DestructuringPropsState/greet';
-import {Purchase,PurchaseClass} from './components/EventHandling/eventHandlingFunction';
+import HelloWorld from './components/2ClassComponent/helloWorld';
+import { Greet,GoodMorning } from './components/3Jsx/jsx';
+import {Car,Bike} from './components/4Props/Cars';
+import GreetVisitors from './components/5State/state';
+import Counter from './components/6SetState/counter';
+import {GreetPeople,GreetPeopleClass} from './components/7DestructuringPropsState/greet';
+import { EventHandlerFunction,EventHandler } from './components/8EventHandling/eventHandlers';
+import ParentComponent from './components/9MethodsAsProps/parentComponent';
+import ConditionalRendering from './components/10ConditionalRendering/conditionalRendering';
+import {ParentList} from './components/11ListRendering/parentList';
 
 function App() {
   return (
@@ -47,8 +50,11 @@ function App() {
       <GreetPeople name="sai kumar" city="Hyderabad"/>
       <GreetPeople name="ramesh" city="Mumbai"/>
       <GreetPeopleClass name="Rajest" city="Banglore"/>
-      <Purchase/>
-      <PurchaseClass/>
+      <EventHandlerFunction/>
+      <EventHandler/>
+      <ParentComponent/>
+      <ConditionalRendering/>
+      <ParentList/>
     </div>
   );
 }
