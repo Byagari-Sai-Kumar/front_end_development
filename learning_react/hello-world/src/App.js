@@ -12,6 +12,8 @@ import { EventHandlerFunction,EventHandler } from './components/8EventHandling/e
 import ParentComponent from './components/9MethodsAsProps/parentComponent';
 import ConditionalRendering from './components/10ConditionalRendering/conditionalRendering';
 import {ParentList} from './components/11ListRendering/parentList';
+import {ParentStylingComponent} from './components/12Styling/parentComponent';
+import ControlledComponent from './components/13ControlledComponents/form'
 
 function App() {
   return (
@@ -55,6 +57,8 @@ function App() {
       <ParentComponent/>
       <ConditionalRendering/>
       <ParentList/>
+      <ParentStylingComponent/>
+      <ControlledComponent/>
     </div>
   );
 }
