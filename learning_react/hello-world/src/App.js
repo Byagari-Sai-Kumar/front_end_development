@@ -13,7 +13,10 @@ import ParentComponent from './components/9MethodsAsProps/parentComponent';
 import ConditionalRendering from './components/10ConditionalRendering/conditionalRendering';
 import {ParentList} from './components/11ListRendering/parentList';
 import {ParentStylingComponent} from './components/12Styling/parentComponent';
-import ControlledComponent from './components/13ControlledComponents/form'
+import ControlledComponent from './components/13ControlledComponents/form';
+import ComponentA from './components/14LifeCycleMethods/componentA';
+import {Fragment} from './components/15Fragments/fragment';
+import RegularPureComponentHolder from './components/16PureComponents/regularPureComponentHolder'
 
 function App() {
   return (
@@ -59,6 +62,9 @@ function App() {
       <ParentList/>
       <ParentStylingComponent/>
       <ControlledComponent/>
+      <ComponentA/>
+      <Fragment/>
+      <RegularPureComponentHolder/>
     </div>
   );
 }

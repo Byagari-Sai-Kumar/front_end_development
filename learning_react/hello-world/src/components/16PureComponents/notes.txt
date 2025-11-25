@@ -1,0 +1,29 @@
+1. Regular components do not implement shouldComponentUpdate whereas Pure components do.
+
+2. Regular components by default return true for shouldComponentUpdate
+Pure components checks for changes between prev props and prev state and then only re-renders
+
+3. The comparision is done on shallow comparision based
+a. Primitive shallow comparision
+
+const a = 1;
+const b = 1;
+const c = a;
+
+a === b //true
+a === c //true
+
+b. non-primitve shallow comparision
+
+const a = [1,2,3]
+const b = [1,2,3]
+const c = a
+
+a === b //false
+a === c //true
+
+4. Do not mutate the state. always return the new state or object
+
+5. It's good practice always maintain child components as pure components when working with pure components to avoid errors
+
+
