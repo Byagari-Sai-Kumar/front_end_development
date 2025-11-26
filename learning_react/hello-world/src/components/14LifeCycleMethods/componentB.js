@@ -6,35 +6,35 @@ class ComponentB extends Component{
         this.state = {
             isLoggedIn : true
         }
-        console.log("Component B constructor")
+        //console.log("Component B constructor")
     }
 
     static getDerivedStateFromProps(props,state){
-        console.log("Component B getDerivedStateFromProps");
+        //console.log("Component B getDerivedStateFromProps");
         return null;
     }
 
     componentDidMount(){
-        console.log('Component B componentDidMount')
+        //console.log('Component B componentDidMount')
     }
 
     shouldComponentUpdate(){
-        console.log('Component B shouldComponentUpdate')
+        //console.log('Component B shouldComponentUpdate')
         return true
     }
 
     getSnapshotBeforeUpdate(prevProps,prevState){
-        console.log('Component B getSnapshotBeforeUpdate')
+        //console.log('Component B getSnapshotBeforeUpdate')
         return null
     }
 
     componentDidUpdate(prevProps,prevState,snapshot){
-        console.log('Component B componentDidUpdate')
+        //console.log('Component B componentDidUpdate')
         return null;
     }
 
     render(){
-        console.log('Component B render')
+        //console.log('Component B render')
         return(
             <>
                 <p>Hello from Component B</p>

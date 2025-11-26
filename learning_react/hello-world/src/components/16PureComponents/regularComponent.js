@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import ReactMemoComponent from '../17ReactMemo/reactMemoComponent';
 
 class RegularComponent extends Component{
     constructor(props){
@@ -9,15 +10,18 @@ class RegularComponent extends Component{
     }
 
     componentDidMount(){
-        setInterval(() => {
-            this.setState({name: 'sai kumar'})
-        }, 2000)
+        // setInterval(() => {
+        //     this.setState({name: 'sai kumar'})
+        // }, 2000)
     }
 
     render(){
-        console.log("Regular component")
+        //console.log("Regular component")
         return(
-            <p>Hello from Regular component</p>
+            <>
+                <p>Hello from Regular component</p>
+                <ReactMemoComponent name={this.state.name}/>
+            </>
         )
     }
 }

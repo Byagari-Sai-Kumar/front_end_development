@@ -9,17 +9,17 @@ class PureComponentA extends PureComponent{
     }
 
     componentDidMount(){
-        setInterval(() => {
-            this.setState({name: 'sai kumar'})
-        }, 2000)
+        // setInterval(() => {
+        //     this.setState({name: 'sai kumar'})
+        // }, 2000)
 
-        setInterval(() => {
-            this.setState({name: 'suresh'})
-        }, 5000)
+        // setInterval(() => {
+        //     this.setState({name: 'suresh'})
+        // }, 5000)
     }
 
     render(){
-        console.log('Pure component')
+        //console.log('Pure component')
         return(
             <p>Hello from pure component</p>
         )

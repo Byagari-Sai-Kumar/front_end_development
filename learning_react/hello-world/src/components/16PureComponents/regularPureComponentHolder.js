@@ -4,7 +4,7 @@ import PureComponentA from "./pureComponent";
 
 class RegularPureComponentHolder extends Component{
     render(){
-        console.log("******** Parent Component *********")
+        //console.log("******** Parent Component *********")
         return(
             <div>
                 <p>This is parent component</p>

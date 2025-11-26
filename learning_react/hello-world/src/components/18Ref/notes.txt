@@ -1,0 +1,7 @@
+using React.createRef() we can directly access the dom nodes in the react itself
+
+use ref={this.inputRef} like this
+
+so as like we can access dom nodes we can also access the component use React.createRef()
+
+Limitions of React.createRef() is this will work only on class components

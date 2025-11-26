@@ -102,30 +102,30 @@ class ComponentA extends Component{
         this.state = {
             isLoggedIn : false
         }
-        console.log("Component A constructor")
+        //console.log("Component A constructor")
     }
 
     static getDerivedStateFromProps(props,state){
-        console.log("Component A getDerivedStateFromProps");
+        //console.log("Component A getDerivedStateFromProps");
         return null;
     }
 
     componentDidMount(){
-        console.log('Component A componentDidMount')
+        //console.log('Component A componentDidMount')
     }
 
     shouldComponentUpdate(){
-        console.log('Component A shouldComponentUpdate')
+        //console.log('Component A shouldComponentUpdate')
         return null
     }
 
     getSnapshotBeforeUpdate(prevProps,prevState){
-        console.log('Component A getSnapshotBeforeUpdate')
+        //console.log('Component A getSnapshotBeforeUpdate')
         return null
     }
 
     componentDidUpdate(prevProps,prevState,snapshot){
-        console.log('Component A componentDidUpdate')
+        //console.log('Component A componentDidUpdate')
         return true;
     }
 
@@ -136,7 +136,7 @@ class ComponentA extends Component{
     }
 
     render(){
-        console.log('Component A render')
+        //console.log('Component A render')
         return(
             <>
                 <button onClick={this.handleButtonClick}>Change State</button>

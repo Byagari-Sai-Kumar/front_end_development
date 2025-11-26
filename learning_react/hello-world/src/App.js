@@ -16,7 +16,11 @@ import {ParentStylingComponent} from './components/12Styling/parentComponent';
 import ControlledComponent from './components/13ControlledComponents/form';
 import ComponentA from './components/14LifeCycleMethods/componentA';
 import {Fragment} from './components/15Fragments/fragment';
-import RegularPureComponentHolder from './components/16PureComponents/regularPureComponentHolder'
+import RegularPureComponentHolder from './components/16PureComponents/regularPureComponentHolder';
+import RefDemoComponent from './components/18Ref/refDemo';
+import ParentRefComponent from './components/18Ref/parentRefComponent';
+import ForwardRefParentComponent from './components/18Ref/forwardRefParentComponent';
+import PortalsDemo from './components/19Portals/portals'
 
 function App() {
   return (
@@ -65,6 +69,10 @@ function App() {
       <ComponentA/>
       <Fragment/>
       <RegularPureComponentHolder/>
+      <RefDemoComponent/>
+      <ParentRefComponent/>
+      <ForwardRefParentComponent/>
+      <PortalsDemo/>
     </div>
   );
 }
