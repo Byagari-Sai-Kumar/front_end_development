@@ -20,7 +20,14 @@ import RegularPureComponentHolder from './components/16PureComponents/regularPur
 import RefDemoComponent from './components/18Ref/refDemo';
 import ParentRefComponent from './components/18Ref/parentRefComponent';
 import ForwardRefParentComponent from './components/18Ref/forwardRefParentComponent';
-import PortalsDemo from './components/19Portals/portals'
+import PortalsDemo from './components/19Portals/portals';
+import ErrorBoundaryChildComponent from './components/20ErrorBoundary/ParentErrorBoundary';
+import {Hero} from './components/20ErrorBoundary/hero';
+import CounterComponent from './components/21HigherOrderComponents/counter';
+import HoverComponent from './components/21HigherOrderComponents/hover';
+import CounterHoverContainer from './components/22RenderPropsPattern/counterHoverContainer';
+import CounterTwoComponent from './components/22RenderPropsPattern/counterTwo';
+import HoverTwoComponent from './components/22RenderPropsPattern/hoverTwo';
 
 function App() {
   return (
@@ -72,7 +79,23 @@ function App() {
       <RefDemoComponent/>
       <ParentRefComponent/>
       <ForwardRefParentComponent/>
-      <PortalsDemo/>
+      {/* <PortalsDemo/> */}
+      <ErrorBoundaryChildComponent>
+          <Hero hero="Superman"/>
+      </ErrorBoundaryChildComponent>
+      <ErrorBoundaryChildComponent>
+          <Hero hero="Batman"/>
+      </ErrorBoundaryChildComponent>
+      {/* <ErrorBoundaryChildComponent>
+          <Hero hero="Joker"/>
+      </ErrorBoundaryChildComponent> */}
+      <CounterComponent name='sai kumar'/>
+      <HoverComponent name='rahul'/>
+      <CounterHoverContainer
+        render={(count,incrementCount) => (
+          <CounterTwoComponent count={count} incrementCount={incrementCount}/>
+        )}
+      />
     </div>
   );
 }
