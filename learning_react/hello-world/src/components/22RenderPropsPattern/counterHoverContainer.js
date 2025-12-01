@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 
 class CounterHoverContainer extends Component{
-    constructor(props) {
+    constructor(props){
         super(props)
 
         this.state = {
@@ -11,14 +11,14 @@ class CounterHoverContainer extends Component{
 
     incrementCount = () => {
         this.setState((prevState) => {
-            return {count : prevState.count + 1}
-        })
+                return {count : prevState.count + 1}
+            })
     }
 
     render(){
         return(
             <div>
-                {this.props.render(this.state.count, this.state.incrementCount)}
+                {this.props.render(this.state.count, this.incrementCount)}
             </div>
         )
     }

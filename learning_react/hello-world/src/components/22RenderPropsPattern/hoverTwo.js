@@ -1,9 +1,8 @@
 import React from "react";
 
-const HoverTwoComponent = (props) => {
+export const HoverTwo = (props) => {
+    const {count,incrementCount} = props;
     return(
-        <p>Hovered X times</p>
+        <p onMouseOver={incrementCount}>Hovered {count} times</p>
     )
 }
-
-export default HoverTwoComponent
