@@ -28,6 +28,9 @@ import HoverComponent from './components/21HigherOrderComponents/hover';
 import CounterHoverContainer from './components/22RenderPropsPattern/counterHoverContainer';
 import {CounterTwo} from './components/22RenderPropsPattern/counterTwo';
 import {HoverTwo} from './components/22RenderPropsPattern/hoverTwo';
+import { UserProvider } from './components/23Context/userContext';
+import {ComponentContextA} from './components/23Context/componentContextA';
+import AxiosComponent from './components/24Axios/axiosComponent'
 
 function App() {
   return (
@@ -101,6 +104,10 @@ function App() {
           <HoverTwo count={count} incrementCount={incrementCount}/>
         )}
       />
+      <UserProvider value='sai kumar'>
+        <ComponentContextA/>
+      </UserProvider>
+      <AxiosComponent/>
     </div>
   );
 }
