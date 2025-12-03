@@ -30,7 +30,8 @@ import {CounterTwo} from './components/22RenderPropsPattern/counterTwo';
 import {HoverTwo} from './components/22RenderPropsPattern/hoverTwo';
 import { UserProvider } from './components/23Context/userContext';
 import {ComponentContextA} from './components/23Context/componentContextA';
-import AxiosComponent from './components/24Axios/axiosComponent'
+import AxiosComponent from './components/24Axios/axiosComponent';
+import {UseStateHook} from './components/25useStateHook/useStateHook'
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
         <ComponentContextA/>
       </UserProvider>
       <AxiosComponent/>
+      <UseStateHook/>
     </div>
   );
 }
