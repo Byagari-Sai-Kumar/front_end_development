@@ -31,7 +31,12 @@ import {HoverTwo} from './components/22RenderPropsPattern/hoverTwo';
 import { UserProvider } from './components/23Context/userContext';
 import {ComponentContextA} from './components/23Context/componentContextA';
 import AxiosComponent from './components/24Axios/axiosComponent';
-import {UseStateHook} from './components/25useStateHook/useStateHook'
+import {UseStateHook} from './components/25useStateHook/useStateHook';
+import {UseEffectHook} from './components/26useEffectHook/useEffectHook';
+import {UseContextHookA} from './components/27useContextHook/useContextHookA';
+import {UseReducerCounter} from './components/28useReducerHook/useReducerCounter';
+import {UseReducerCounterTwo} from './components/28useReducerHook/useReducerCounterTwo';
+import {UseReducerCounterThree} from './components/28useReducerHook/useReducerCounterThree';
 
 function App() {
   return (
@@ -110,6 +115,11 @@ function App() {
       </UserProvider>
       <AxiosComponent/>
       <UseStateHook/>
+      <UseEffectHook/>
+      <UseContextHookA/>
+      <UseReducerCounter/>
+      <UseReducerCounterTwo/>
+      <UseReducerCounterThree/>
     </div>
   );
 }

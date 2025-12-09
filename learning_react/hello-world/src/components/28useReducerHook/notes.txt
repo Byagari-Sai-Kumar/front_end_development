@@ -1,0 +1,5 @@
+1. useReducer() hook that is used for state management in React
+2. useReducer is related to reducer function
+3. useReducer(reducer,initialState)
+4. reducer(currentState,action)
+
