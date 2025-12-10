@@ -1,4 +1,4 @@
-import React, {act, useReducer} from "react";
+import React, {useReducer} from "react";
 
 const initialState = {
     firstCounter : 0,
