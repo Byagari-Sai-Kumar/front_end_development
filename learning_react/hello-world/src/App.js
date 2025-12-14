@@ -39,6 +39,10 @@ import {UseReducerCounterTwo} from './components/28useReducerHook/useReducerCoun
 import {UseReducerCounterThree} from './components/28useReducerHook/useReducerCounterThree';
 import {UseReducerFour} from './components/28useReducerHook/useReducerFour';
 import {UseReducerDataFetching} from './components/28useReducerHook/useReducerDataFetching'
+import {UseCallbackParentComponent} from './components/29useCallbackHook/parentComponent'
+import {UseMemoHook} from './components/30useMemoHook/counter'
+import {UseRefHook} from './components/31useRefHook/useRefHook'
+import {UseRefHookTwo} from './components/31useRefHook/useRefHookTwo'
 
 function App() {
   return (
@@ -124,6 +128,10 @@ function App() {
       <UseReducerCounterThree/>
       <UseReducerFour/>
       <UseReducerDataFetching/>
+      <UseCallbackParentComponent/>
+      <UseMemoHook/>
+      <UseRefHook/>
+      <UseRefHookTwo/>
     </div>
   );
 }
