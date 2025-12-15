@@ -43,6 +43,10 @@ import {UseCallbackParentComponent} from './components/29useCallbackHook/parentC
 import {UseMemoHook} from './components/30useMemoHook/counter'
 import {UseRefHook} from './components/31useRefHook/useRefHook'
 import {UseRefHookTwo} from './components/31useRefHook/useRefHookTwo'
+import {UseDocumentTitleCounter} from './components/32useDocumentTitleHook/useDocumentTitleCounterOne'
+import {UseDocumentTitleCounterTwo} from './components/32useDocumentTitleHook/useDocumentTitleCounterTwo'
+import {UseCounterHookOne} from './components/33useCounterHook/useCounterOne'
+import {UseCounterHookTwo} from './components/33useCounterHook/useCounterTwo'
 
 function App() {
   return (
@@ -132,6 +136,10 @@ function App() {
       <UseMemoHook/>
       <UseRefHook/>
       <UseRefHookTwo/>
+      <UseDocumentTitleCounter/>
+      <UseDocumentTitleCounterTwo/>
+      <UseCounterHookOne/>
+      <UseCounterHookTwo/>
     </div>
   );
 }
