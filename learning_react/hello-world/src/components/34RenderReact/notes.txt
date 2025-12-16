@@ -1,0 +1,22 @@
+There are two stages in react
+Render phase
+Commit phase
+
+1. Render phase - React starts with the root and keep going on to the leaves. Here react uses createElement() method
+to convert all the jsx to javascript objects which holds all the info about each components.
+
+2. Commit phase - Now all the js objects are inserted into the DOM.
+
+
+Re-Render 
+1. Re-Render phase - React starts with the root and keep going on to the leaves finding for the components which need
+updating and re-rendering i.e which are using setState(), setCount(), dispatch() methods. and these components flag 
+themself as NEEDED TO BE RE-RENDER 
+
+2. Now for those specific components react will again invoke createElement() method and createElement jsx into js objects
+(react elements) and stores that render output.
+
+3. Now react compares the previous render with the new render and only the changed/affected components are sent to DOM
+
+Commit phase
+1. Only the updates are updated in the DOM

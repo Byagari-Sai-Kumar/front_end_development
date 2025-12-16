@@ -47,6 +47,10 @@ import {UseDocumentTitleCounter} from './components/32useDocumentTitleHook/useDo
 import {UseDocumentTitleCounterTwo} from './components/32useDocumentTitleHook/useDocumentTitleCounterTwo'
 import {UseCounterHookOne} from './components/33useCounterHook/useCounterOne'
 import {UseCounterHookTwo} from './components/33useCounterHook/useCounterTwo'
+import {UseStateRender} from './components/35UseStateRender/useStateRender'
+import {UseReducerRender} from './components/36UseReduerRender/useReducerRender'
+import {ImmutableStateRender} from './components/37ImmutableStateRender/immutableStateRender'
+import {ImmutableStateArrayRender} from './components/37ImmutableStateRender/immutableStateArrayRender'
 
 function App() {
   return (
@@ -140,6 +144,10 @@ function App() {
       <UseDocumentTitleCounterTwo/>
       <UseCounterHookOne/>
       <UseCounterHookTwo/>
+      <UseStateRender/>
+      <UseReducerRender/>
+      <ImmutableStateRender/>
+      <ImmutableStateArrayRender/>
     </div>
   );
 }
