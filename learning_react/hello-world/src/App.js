@@ -51,6 +51,10 @@ import {UseStateRender} from './components/35UseStateRender/useStateRender'
 import {UseReducerRender} from './components/36UseReduerRender/useReducerRender'
 import {ImmutableStateRender} from './components/37ImmutableStateRender/immutableStateRender'
 import {ImmutableStateArrayRender} from './components/37ImmutableStateRender/immutableStateArrayRender'
+import {ParentRender} from './components/38ParentChildRender/ParentRender'
+import {ParentOneRender} from './components/39SameElementReference/ParentRender'
+import {ChildOneRender} from './components/39SameElementReference/ChildRender'
+import {GrandParentOne} from './components/39SameElementReference/GrandParent'
 
 function App() {
   return (
@@ -148,6 +152,11 @@ function App() {
       <UseReducerRender/>
       <ImmutableStateRender/>
       <ImmutableStateArrayRender/>
+      <ParentRender/>
+      <ParentOneRender>
+        <ChildOneRender/>
+      </ParentOneRender>
+      <GrandParentOne/>
     </div>
   );
 }
