@@ -15,7 +15,7 @@ const reducer = (currentState,action) => {
 export const UseReducerRender = () => {
     const [currentState,dispatch] = useReducer(reducer,initialState);
 
-    console.log('UseReducerRender');
+    //console.log('UseReducerRender');
     return(
         <div>   
             <button onClick={() => dispatch('increment')}>Count - {currentState}</button>

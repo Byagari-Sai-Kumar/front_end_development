@@ -18,7 +18,7 @@ export const ImmutableStateArrayRender = () => {
         setNamesArray(newNamesArray);
     }
 
-    console.log('ImmutableStateArrayRender');
+    //console.log('ImmutableStateArrayRender');
     return(
         <div>
             <button onClick={changeName}>Change name</button>

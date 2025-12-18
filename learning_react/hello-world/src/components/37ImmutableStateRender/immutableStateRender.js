@@ -21,7 +21,7 @@ export const ImmutableStateRender = () => {
         setName(newName);
     }
 
-    console.log('ImmutableStateRender');
+    //console.log('ImmutableStateRender');
     return(
         <div>
             <button onClick={changeName}>{name.fname} {name.lname}</button>

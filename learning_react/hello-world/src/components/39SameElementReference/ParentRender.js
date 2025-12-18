@@ -5,7 +5,7 @@ const initialState = 0;
 export const ParentOneRender = ({children}) => {
     const [count,setCount] = useState(initialState);
 
-    console.log('Parent One Render');
+    //console.log('Parent One Render');
     return(
         <div>
             <button onClick={() => setCount(count + 1)}>Count - {count}</button>

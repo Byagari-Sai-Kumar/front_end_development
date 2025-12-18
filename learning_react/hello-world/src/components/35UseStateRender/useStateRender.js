@@ -3,7 +3,7 @@ import React,{useState} from "react";
 export const UseStateRender = () => {
     const [count,setCount] = useState(0);
 
-    console.log('UseStateRender');
+    //console.log('UseStateRender');
     return(
         <div>
             <button onClick={() => setCount(prevCount => prevCount + 1)}>Count - {count}</button>

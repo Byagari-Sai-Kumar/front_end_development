@@ -55,6 +55,9 @@ import {ParentRender} from './components/38ParentChildRender/ParentRender'
 import {ParentOneRender} from './components/39SameElementReference/ParentRender'
 import {ChildOneRender} from './components/39SameElementReference/ChildRender'
 import {GrandParentOne} from './components/39SameElementReference/GrandParent'
+import {ParentMemoRender} from './components/40ReactMemoRender/ParentMemoRender'
+import {ParentTwoMemoRender} from './components/41IncorrectReactMemo/ParentTwoMemoRender'
+import {ParentThreeMemoRender} from './components/42IncorrectReactMemoTwo/ParentThreeMemoRender'
 
 function App() {
   return (
@@ -157,6 +160,9 @@ function App() {
         <ChildOneRender/>
       </ParentOneRender>
       <GrandParentOne/>
+      <ParentMemoRender/>
+      <ParentTwoMemoRender/>
+      <ParentThreeMemoRender/>
     </div>
   );
 }

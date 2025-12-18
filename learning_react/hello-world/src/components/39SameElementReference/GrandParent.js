@@ -7,7 +7,7 @@ const initialState = 0;
 export const GrandParentOne = ({children}) => {
     const [count,setCount] = useState(initialState);
 
-    console.log('GrandParent Render');
+    //console.log('GrandParent Render');
     return(
         <div>
             <button onClick={() => setCount((prevCount) => prevCount + 1)}>Count = {count}</button>
