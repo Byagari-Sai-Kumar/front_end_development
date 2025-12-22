@@ -1,0 +1,46 @@
+1. Redux is a library that is predictable, state container for javascript applications.
+
+2. It is not tied only with react.
+
+3. Any application using javascript like angular, vue, react can use redux.
+
+4. Redux stores and manages the application state
+
+5. Redux stores the application state outside of the react components and passes to whichever the components
+the state is required.
+
+6. React is a UI library and Redux is the state management library.
+
+Three core concepts of redux
+
+1. Store - This is the place where application state is kept or stored.
+
+2. Action - This describes the changes in the state of the application application
+
+3. Reducer - Works together with store and action and carries out the state transition.
+
+Three principles of redux
+
+1. The state is stored as an object within the application.
+
+{
+    noOfCakes:10
+}
+
+2. You are not allowed to directly update the state instead we need to tell redux to update the state called as action.
+
+{
+    type:'BUY_CAKE'
+}
+
+3. Writing pure reducer functions to handle current state and action. Reducer function instead of updating the previous state
+it will emit the new state.
+
+const reducer = (currentState,action) => {
+    switch(action.type){
+        case 'BUY_CAKE':
+            return {
+                noOfCakes: currentState.noOfCakes - 1
+            }
+    }
+}

@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "learning_react"
+		},
+		{
+			"path": "learning_redux"
 		}
 	]
 }
