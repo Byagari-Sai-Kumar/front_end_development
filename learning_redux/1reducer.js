@@ -1,5 +1,5 @@
 const redux = require('redux');
-const createStore = redux.createStore();
+const createStore = redux.createStore;
 
 
 //Action
@@ -46,10 +46,16 @@ const reducer = (prevState = initialState,action) => {
 //Store
 //One store for the entire application
 
-//1. Hols the application state
+//1. Holds the application state
 //2. Allows access to the state via getState()
 //3. Allows state to update via dispatch(action)
 //4. Register listeners via subscribe(listener)
 //5. Unregister listeners via function return by the subscribe(listener)
 
 const store = createStore(reducer)
+console.log('Initial state',store.getState());
+const unsubscribe = store.subscribe(() => console.log('Updated state',store.getState()));
+store.dispatch(buyCake());
+store.dispatch(buyCake());
+store.dispatch(buyCake());
+unsubscribe();
