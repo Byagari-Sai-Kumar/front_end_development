@@ -91,3 +91,5 @@ unsubscribe();
 
 
 //install middleware - npm install redux-logger
+//applyMiddleware(logger) executes between dispatch and action performed.
+//with this we could get all the logs of the state.
