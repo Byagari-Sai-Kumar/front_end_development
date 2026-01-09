@@ -1,0 +1,10 @@
+1. Older way to create react app
+
+--npm create-react-app my-app
+--npm run
+
+2. Latest way using vite
+
+--npm create vite@latest my-app
+--npm run dev
+

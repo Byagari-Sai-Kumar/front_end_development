@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "learning_redux"
+		},
+		{
+			"path": "learning_react_redux"
 		}
 	]
 }

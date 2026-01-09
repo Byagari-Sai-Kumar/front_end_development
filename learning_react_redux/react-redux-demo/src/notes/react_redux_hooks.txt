@@ -1,0 +1,11 @@
+React Redux Pattern
+
+Action creator, reducers, provide the store to connect to the component
+
+Component can access the state and dispatch the actions
+
+React Hooks
+
+React Redux v7.1
+
+Subscribe to store and dispatch the actions without using connect()
