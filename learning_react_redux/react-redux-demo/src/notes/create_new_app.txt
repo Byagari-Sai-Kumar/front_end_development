@@ -8,7 +8,32 @@
 --npm create vite@latest my-app
 --npm run dev
 
-3. Install redux and react-redux package
+3. Install redux package
 
---npm install redux react-redux
+--npm install redux 
 
+now we can get access to createStore,combineReducers,applyMiddleware within the redux
+
+4. Install react-redux package
+
+--npm install react-redux
+
+now we can get access to useSelector,useDispatch in the component level
+
+5. Install redux-logger package
+
+npm install redux-logger
+
+import logger from redux-logger
+
+while creating store we can place this logger inside applyMiddleware(logger) so that we have view state changes.
+
+6. Redux dev tools
+
+Add react-devtools extension from chrome or edge and save it in the browser
+
+npm install --save @redux-devtools/extension
+
+import {composeWithDevTools} from '@redux-devtools/extension'
+
+now we can use it while creating the store createStore(reducer,composeWithDevTools(applyMiddleware(logger)))

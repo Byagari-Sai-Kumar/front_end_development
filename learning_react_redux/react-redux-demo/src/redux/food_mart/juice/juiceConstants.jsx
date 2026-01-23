@@ -1,0 +1,5 @@
+export const BUY_APPLE_JUICE = "BUY_APPLE_JUICE";
+
+export const BUY_MANGO_JUICE = "BUY_MANGO_JUICE";
+
+export const BUY_ORANGE_JUICE = "BUY_ORANGE_JUICE";
