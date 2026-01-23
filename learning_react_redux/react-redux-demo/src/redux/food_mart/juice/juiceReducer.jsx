@@ -11,7 +11,7 @@ const juiceReducer = (state=initialState,action) => {
         case BUY_APPLE_JUICE:
             return {
                 ...state,
-                noOfAppleJuice: state.noOfAppleJuice - 1
+                noOfAppleJuice: state.noOfAppleJuice - action.payload
             }
         case BUY_MANGO_JUICE:
             return{

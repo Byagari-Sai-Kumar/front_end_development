@@ -1,8 +1,9 @@
 import { BUY_APPLE_JUICE, BUY_MANGO_JUICE, BUY_ORANGE_JUICE } from "./juiceConstants";
 
-export function buy_apple_juice(){
+export function buy_apple_juice(appleJuiceCount){
     return{
-        type: BUY_APPLE_JUICE
+        type: BUY_APPLE_JUICE,
+        payload : appleJuiceCount
     }
 }
 

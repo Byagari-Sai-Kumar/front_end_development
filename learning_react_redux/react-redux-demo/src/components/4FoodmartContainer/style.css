@@ -18,3 +18,13 @@
     background-color: #5a91e8;
     color: #ffffff;
 }
+
+.first-row-eachitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputBox{
+    margin-bottom: 15px;
+}

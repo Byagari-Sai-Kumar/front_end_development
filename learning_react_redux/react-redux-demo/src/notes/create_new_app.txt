@@ -37,3 +37,5 @@ npm install --save @redux-devtools/extension
 import {composeWithDevTools} from '@redux-devtools/extension'
 
 now we can use it while creating the store createStore(reducer,composeWithDevTools(applyMiddleware(logger)))
+
+7. We can also send data from component to redux via dipatch function in the component and consume as payload in the redux action
