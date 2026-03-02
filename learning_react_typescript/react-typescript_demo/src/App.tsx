@@ -7,6 +7,8 @@ import {Status} from "./components/3AdvanceProps/status"
 import {Header} from './components/3AdvanceProps/heading'
 import {Oscar} from "./components/3AdvanceProps/oscar"
 import {OptionalProps} from "./components/3AdvanceProps/optionalProps"
+import { Button } from './components/4EventProps/button'
+import { Input } from './components/4EventProps/input'
 
 function App() {
   const personDetails = {
@@ -41,6 +43,8 @@ function App() {
         <Header>Oscar goes to John</Header>
       </Oscar>
       <OptionalProps name="saikumar" isIndian={true}/>
+      <Button handleClick={() => alert("Hello from typescript button event!!")}/>
+      <Input value="sai kumar" handleChange={(event) => console.log(event)}/>
     </>
   )
 }
