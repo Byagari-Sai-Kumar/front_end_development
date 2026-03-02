@@ -37,7 +37,14 @@ const JuiceContainer = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state,ownProps) => {
+    if(ownProps){
+        return{
+            noOfApple: parseInt(ownProps),
+            noOfMango: parseInt(ownProps),
+            noOfOrange: parseInt(ownProps)
+        }
+    }
     return{
         noOfApple: state.juice.noOfAppleJuice,
         noOfMango: state.juice.noOfMangoJuice,

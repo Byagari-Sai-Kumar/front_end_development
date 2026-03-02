@@ -34,11 +34,10 @@ function App() {
           <IcecreamContainerOne/>
         </Provider> */}
         <Provider store={foodmartStore}>
-          <JuiceContainer/>
+          <JuiceContainer ownProps="20"/>
           <FastFoodContainer/>
           <DessertContainer/>
         </Provider>
-        
       </div>
   )
 }
