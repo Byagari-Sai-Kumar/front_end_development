@@ -1,0 +1,8 @@
+Learning React Typescript
+
+1. with static type checking we learn about more potential bugs as we are typing the code, instead of heading to the 
+browser and figuring out at runtime.
+
+2. Describes the shape of the object.
+
+3. Makes maintainance and refactoring of large code bases much easier.
