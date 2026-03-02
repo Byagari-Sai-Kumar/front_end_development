@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "learning_react_redux"
+		},
+		{
+			"path": "learning_react_typescript"
 		}
 	]
 }
