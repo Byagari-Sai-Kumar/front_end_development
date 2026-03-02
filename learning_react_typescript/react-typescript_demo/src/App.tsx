@@ -9,6 +9,7 @@ import {Oscar} from "./components/3AdvanceProps/oscar"
 import {OptionalProps} from "./components/3AdvanceProps/optionalProps"
 import { Button } from './components/4EventProps/button'
 import { Input } from './components/4EventProps/input'
+import { ContainerStyle } from './components/5StyleProps/styleContainer'
 
 function App() {
   const personDetails = {
@@ -34,7 +35,7 @@ function App() {
   return (
     <>
       <Greet name="sai kumar"/>
-      <GreetBasicProps name='saik kumar' messageCount={10} isLoggedIn={true}/>
+      <GreetBasicProps name='sai kumar' messageCount={10} isLoggedIn={true}/>
       <Person name={personDetails}/>
       <PersonList people={nameList}/>
       <Status currentStatus="success"/>
@@ -45,6 +46,7 @@ function App() {
       <OptionalProps name="saikumar" isIndian={true}/>
       <Button handleClick={() => alert("Hello from typescript button event!!")}/>
       <Input value="sai kumar" handleChange={(event) => console.log(event)}/>
+      <ContainerStyle styles={{backgroundColor:'blue', margin: '10px'}}/>
     </>
   )
 }
