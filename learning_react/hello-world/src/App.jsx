@@ -61,27 +61,15 @@ import {ParentThreeMemoRender} from './components/42IncorrectReactMemoTwo/Parent
 import {ReactMemoParent} from './components/43ReactMemoRender/ReactMemoParent'
 import {ContextParentRender} from './components/44ContextRender/ContextParentRender'
 import {ContextChildOneRender} from './components/44ContextRender/ContextChildRender'
+import {PracticeComponentA} from './components/45Practice/practiceComponentA'
+// import {PracticeComponentB} from './components/45Practice/practiceComponentB'
+// import PracticeComponentC from './components/45Practice/practiceComponentC'
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Hello World!!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
       {/* <Greet/>
-      <HelloWorld/> */}
+      <HelloWorld/>
       <Greet/>
       <GoodMorning/>
       <Car brand="Audi"/>
@@ -112,16 +100,16 @@ function App() {
       <RefDemoComponent/>
       <ParentRefComponent/>
       <ForwardRefParentComponent/>
-      {/* <PortalsDemo/> */}
+      <PortalsDemo/>
       <ErrorBoundaryChildComponent>
           <Hero hero="Superman"/>
       </ErrorBoundaryChildComponent>
       <ErrorBoundaryChildComponent>
           <Hero hero="Batman"/>
       </ErrorBoundaryChildComponent>
-      {/* <ErrorBoundaryChildComponent>
+      <ErrorBoundaryChildComponent>
           <Hero hero="Joker"/>
-      </ErrorBoundaryChildComponent> */}
+      </ErrorBoundaryChildComponent>
       <CounterComponent name='sai kumar'/>
       <HoverComponent name='rahul'/>
       <CounterHoverContainer
@@ -169,9 +157,10 @@ function App() {
       <ReactMemoParent/>
       <ContextParentRender>
           <ContextChildOneRender/>
-      </ContextParentRender>
+      </ContextParentRender> */}
+      <PracticeComponentA/>
     </div>
   );
 }
 
-export default App;
+export default App; 

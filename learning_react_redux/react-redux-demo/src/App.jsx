@@ -14,7 +14,11 @@ import JuiceContainer from './components/4FoodmartContainer/juiceContainer/juice
 import FastFoodContainer from './components/4FoodmartContainer/fastFoodContainer/fastFoodContainer.jsx'
 import DessertContainer from './components/4FoodmartContainer/dessertContainer/dessertContainer.jsx'
 
-import foodmartStore from './redux/food_mart/foodmart_root_reducer.jsx'
+//import foodmartStore from './redux/food_mart/foodmart_root_reducer.jsx'
+
+import {carBikeCombineStore} from './redux/carBikeStore.jsx'
+import {CarShowroom} from './components/5CarContainer/carShowroom.jsx'
+import {BikeShowroom} from './components/6BikeContainer/bikeShowroom.jsx'
 
 function App() {
   return (
@@ -33,10 +37,15 @@ function App() {
 
           <IcecreamContainerOne/>
         </Provider> */}
-        <Provider store={foodmartStore}>
+        {/* <Provider store={foodmartStore}>
           <JuiceContainer ownProps="20"/>
           <FastFoodContainer/>
           <DessertContainer/>
+        </Provider>
+        */}
+        <Provider store={carBikeCombineStore}>
+          <CarShowroom/>
+          <BikeShowroom/>
         </Provider>
       </div>
   )
