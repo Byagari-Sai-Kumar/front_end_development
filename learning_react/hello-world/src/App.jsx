@@ -64,6 +64,7 @@ import {ContextChildOneRender} from './components/44ContextRender/ContextChildRe
 import {PracticeComponentA} from './components/45Practice/practiceComponentA'
 // import {PracticeComponentB} from './components/45Practice/practiceComponentB'
 // import PracticeComponentC from './components/45Practice/practiceComponentC'
+import {Debouncing} from './components/46Debouncing/debouncing'
 
 function App() {
   return (
@@ -157,8 +158,9 @@ function App() {
       <ReactMemoParent/>
       <ContextParentRender>
           <ContextChildOneRender/>
-      </ContextParentRender> */}
-      <PracticeComponentA/>
+      </ContextParentRender>
+      <PracticeComponentA/>*/}
+      <Debouncing/>
     </div>
   );
 }
