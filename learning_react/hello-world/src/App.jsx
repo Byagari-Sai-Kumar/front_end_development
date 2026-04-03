@@ -65,6 +65,7 @@ import {PracticeComponentA} from './components/45Practice/practiceComponentA'
 // import {PracticeComponentB} from './components/45Practice/practiceComponentB'
 // import PracticeComponentC from './components/45Practice/practiceComponentC'
 import {Debouncing} from './components/46Debouncing/debouncing'
+import {LazyLoadingComponentA} from './components/47LazyLoading/lazyLoadingComponentA'
 
 function App() {
   return (
@@ -159,8 +160,9 @@ function App() {
       <ContextParentRender>
           <ContextChildOneRender/>
       </ContextParentRender>
-      <PracticeComponentA/>*/}
-      <Debouncing/>
+      <PracticeComponentA/>
+      <Debouncing/> */}
+      <LazyLoadingComponentA/>
     </div>
   );
 }

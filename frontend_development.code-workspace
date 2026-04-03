@@ -1,18 +1,27 @@
 {
 	"folders": [
 		{
+			"name": "problem_solving",
+			"path": "problem_solving"
+		},
+		{
+			"name": "learning_javascript",
 			"path": "learning_javascript"
 		},
 		{
+			"name": "learning_react",
 			"path": "learning_react"
 		},
 		{
+			"name": "learning_redux",
 			"path": "learning_redux"
 		},
 		{
+			"name": "learning_react_redux",
 			"path": "learning_react_redux"
 		},
 		{
+			"name": "learning_react_typescript",
 			"path": "learning_react_typescript"
 		}
 	]
