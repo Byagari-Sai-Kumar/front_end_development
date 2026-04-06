@@ -23,6 +23,9 @@
 		{
 			"name": "learning_react_typescript",
 			"path": "learning_react_typescript"
+		},
+		{
+			"path": "learning_typescript"
 		}
 	]
 }

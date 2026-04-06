@@ -139,3 +139,5 @@ COMMON COMPILER OPTIONS
 You can learn about all of the compiler options at https://aka.ms/tsc
 
 4. npx tsc --init (this will create tsconfig.json file with default typescript settings)
+
+5. npx tsc file_name (this will create a .js file same content as ts.)
