@@ -26,6 +26,9 @@
 		},
 		{
 			"path": "learning_typescript"
+		},
+		{
+			"path": "learning_nextjs"
 		}
 	]
 }

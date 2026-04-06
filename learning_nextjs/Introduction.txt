@@ -1,0 +1,29 @@
+1. NextJS is a framework that uses React to build frontend applications.
+
+2. Even though React has good capable of building applications it mainly focus on UI layer.
+
+3. NextJS has everything ready that is helpful to build a production ready applications such as routing, data fetching etc.
+
+4. You no need to install any additional packages.
+
+Features of NextJS:
+
+1. Routing. we need not to install any other packages for routing. NextJS has file based Routing.
+
+2. API Routes. we can be able to build api's simulataneously and get connected to backend.
+
+3. Rendering. NextJS supports both Client Side Rendering and Server Side Rendering making more optimization.
+
+4. Data fetching. we need to install separate library for data fetching. NextJS has its own.
+
+5. Styling. NextJS supports normal css and tailwind css.
+
+6. Dev and prob build system. 
+
+Installation:
+
+npx create-next-app@latest my-app
+
+cd my-app
+
+npm run dev
