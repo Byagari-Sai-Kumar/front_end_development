@@ -1,0 +1,104 @@
+1. Webpack is a most popular build tool and widely used in current world where we have reached single page application 
+with lots of dynamic features.
+
+Understanding how application were used to build before Webpack. 
+what are those approches, challenges faced and how did all they over come.
+
+Stage 1 Challenges:
+
+One application with three files.
+main.js
+external.js
+payment.js
+
+1. The the olden days the applications used to have all the .js file with large content.
+2. Here Debugging is hard.
+3. Working with code change is hard.
+4. Failure impact was more.
+5. Scoping issues.
+
+Stage 2:
+
+Later developers used to split the code.
+
+One application with multiple files.
+
+main.js
+auth.js
+cart.js
+payment.js
+support.js
+external.js
+
+1. Less code in each file.
+2. Debugging was easy.
+3. Easy to build and scale.
+
+Challenges:
+
+1. Order of execution is important. We have starting point as html file and then all the remaining files should be
+arranged in proper order.
+2. Hard to manage. 
+3. Network load issues. many api call request to server may slow down the application.
+
+Stage 3:
+
+Later server side application.
+
+1. Request made to server and server will response the html page.
+2. All the heavy things are happening on server. thus client is now made lighter.
+
+Satge 4:
+
+Singel Page Application. 
+
+1. Now a days developers are maintaining SPA where initally the server will response a basic html page and 
+remaining all the js file and files will load in the client only and shown to users.
+2. The components are arranged in a structured way.
+3. Redux, utility, services, all these are separated and multiple libraries are supported to install and use.
+
+Challenges:
+
+1. Large js code on client with multiple dependencies.
+2. We need to breakdown the js file for faster loading.
+2. Using polyfills to work applications in older browsers.
+
+To resolve all these Webpack comes into picture.
+
+Solution 1:
+
+1. To resolve stage 2 problem with multiple js file, webpack expects a entry point file from where our application starts
+and then all the files are compressed and redused the sizes.
+
+Multiple files ------> main.js ------> bundle.js
+
+Solution 2:
+
+1. To resolve SPA application webpack expects the entry file.
+2. Prepare dependencies hirarchy.
+3. Create final bundle. It could be single or multiple files based on our configuration.
+4. Take care of neccessary conversion from ts to js 
+5. Dependencies are in correct order.
+6. bundle is optimized, minified, compressed.
+7. Convert css pre proccessor file to css file.
+8. Moving static assets like images to file bundle.
+
+
+How Webpack work:
+
+Entry point -- one or more entry points
+Loader -- Different file type transformation
+Plugins -- Global transformation
+Output -- optimized bundle
+
+Features of Webpack:
+
+1. Load different assets
+2. Dependency Graph.
+3. Optimized production build.
+4. Bundle splitting.
+5. Hot module replacement.
+6. Dead code elimination
+7. Module federation.
+8. Caching.
+9. Duplicate code elimination.

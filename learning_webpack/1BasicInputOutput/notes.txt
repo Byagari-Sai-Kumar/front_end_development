@@ -1,0 +1,26 @@
+1. Initialize project with npm init
+
+2. Install webpack and webpack-cli dependencies
+npm install webpack webpack-cli --save-developers
+
+4. Use ES6 modules to export and import modules with in the application.
+
+3. Create a webpack.config.js file 
+
+4. Basic configuration in the webpack.config.js file
+
+5. Update package.json file 
+    "scripts": {
+        "build": "webpack"
+    },
+
+6. npm run build
+
+7. By default the bundle.js will be generated in the production mode. to enable development mode chane to 
+    "scripts": {
+        "build": "webpack --mode development"
+    },
+
+8. include bundle.js into the html file.
+
+9. Learn more: https://webpack.js.org/configuration/mode/
