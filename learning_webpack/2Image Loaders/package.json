@@ -1,7 +1,7 @@
 {
-  "name": "webpack-demo",
+  "name": "webpack-image-loader",
   "version": "1.0.0",
-  "description": "This is introduction to webpack demo",
+  "description": "Learning webpack image loader",
   "main": "script.js",
   "scripts": {
     "build": "webpack --mode development"

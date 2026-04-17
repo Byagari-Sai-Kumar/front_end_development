@@ -1,0 +1,15 @@
+How does a webpack works.
+
+Entry -- one or more entry 
+Loaders  -- Different file type transformation
+Plugins -- Global transformation
+Output -- optimized output bundle
+
+By default webpack doesn't know how to deal with other files other than javascript.
+
+Loaders are responsible for:
+1. Tansplantation -- conversions for latest technologies like ES6+, React, TypeScript etc
+2. Images -- optimizing images.
+3. Fonts
+4. CSS Files.
+
