@@ -1,0 +1,11 @@
+1. Layouts are the way we arrange our components.
+
+2. On UI we could have header, footer, navigation etc.
+
+3. without disturbing the original Layouts we can organize our compoenents.
+
+4. In the root layout.tsx edit and place compoenents inside the body tag and these will be shown common on all the compoenents.
+
+5. logout.tsx file is the root logout for all the compoenents.
+
+6. even if we delete this file. next js automatically generates the new layout.tsx file.

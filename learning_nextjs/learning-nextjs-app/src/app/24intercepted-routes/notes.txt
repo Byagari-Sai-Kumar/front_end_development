@@ -1,0 +1,10 @@
+Intercepted Routes
+
+1. Intercepted routes allows us to show alternative UI while preserving the current context and redirects to the
+default UI on a page load.
+
+1. Always create intercepting folders (target folders) inside the source folder.
+
+2. Intercepted folder which is created inside the source folder, the name should always match the target folder. 
+
+3. (.)folder-name is to match same level segments

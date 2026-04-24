@@ -1,0 +1,3 @@
+1. Any operations like GET,POST,PATCH,DELETE on the data will not affect the actual data.
+
+2. Will be managed in the memory.

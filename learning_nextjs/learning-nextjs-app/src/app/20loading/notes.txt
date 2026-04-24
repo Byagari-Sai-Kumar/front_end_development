@@ -1,0 +1,11 @@
+1. loading.tsx is a special files that lets us to show loading state when user is trying to fetch something.
+
+2. this file is responsible to guarentee users that their click is working.
+
+3. Layout pages are still in responsive to the users.
+
+4. loading.tsx wraps page.tsx and show loading state.
+
+5. later we can customize the loading component.
+
+6. we can maintain individual loading components. but make sure of the file position.

@@ -1,0 +1,5 @@
+1. We can also create multiple layouts specific for some routes.
+
+2. Using route grouping () create a layout.tsx file that takes the childred of that specific folders and shows 
+accordingly.
+

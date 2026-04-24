@@ -1,0 +1,13 @@
+There are three ways to set Metadata.
+
+1. string
+
+2. import Metadata from 'next' and use this typescript.
+
+{
+    title : {
+        default : "",
+        template: "%s | ...",
+        absolute: ""
+    }
+}

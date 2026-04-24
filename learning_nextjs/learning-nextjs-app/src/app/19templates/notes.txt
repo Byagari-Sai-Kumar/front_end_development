@@ -1,0 +1,11 @@
+1. Templates are similar to layouts in that they are also UI shared between multiple pages in your app.
+
+2. Whenever a user navigates between routes sharing a template, you get a complete fresh start.
+
+3. A new template component instance is mounted.
+
+4. DOM elements are recreated
+
+5. State is cleared.
+
+6. Effects are re-synchronized.

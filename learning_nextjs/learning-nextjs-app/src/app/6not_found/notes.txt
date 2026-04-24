@@ -1,0 +1,24 @@
+1. Instead of default page not found, we can use our own page not found component.
+
+Case 1:
+
+1. Create not-found.tsx file under root folder. and create a component and navigate to that component.
+
+2. not-found.tsx is the next.js naming convention.
+
+Case 2:
+
+1. We can also use our own created page not found component inside another components.
+
+2. Just import the NotFound component and use it.
+
+Case 3:
+
+1. We can also have multiple page not found component based on current scenario.
+
+2. create not-found.tsx file inside the desired folder and use it.
+
+3. Next.js will look for not found page as hirarchy.
+
+Note: the naming convention for the not found page must be always "not-found.tsx"
+

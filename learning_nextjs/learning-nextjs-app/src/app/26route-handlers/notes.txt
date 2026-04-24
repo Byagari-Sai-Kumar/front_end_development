@@ -1,0 +1,20 @@
+1. Route handlers are greate when making external api calls.
+
+2. Route handlers run server side. our sensitive data like keys stays in the server and never reaches the browser.
+
+3. Route handlers are equivalent of API routes in page router.
+
+4. Next.js supports GET,POST,PUT,DELETE,OPTION,HEAD http methods.
+
+5. If an unsupported api called is made then next.js automatically shows 405 method not allowed error.
+
+6. always create route.ts file in the folder.
+
+7. We can also have nested routes similar to page routes.
+
+8. If we have page.tsx and route.ts in the same folder then we will get conflicts:
+
+An issue occurred while preparing your Next.js app
+Conflicting route and page at /26route-handlers/dashboard: route at /26route-handlers/dashboard/route and page at /26route-handlers/dashboard/page
+
+so move the route.ts in a separate in the api folder.

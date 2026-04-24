@@ -1,0 +1,9 @@
+1. For client side navigation next.js gives us <Link> component.
+
+2. Link component extends HTML <a> anchor element and its primary way to navigate between routes in next.js
+
+3. import Link from 'next/link';
+
+4. <Link hred="/blog">Blog<Link/>
+
+5. we can also dynamically embed variables in the link using `${variable}`

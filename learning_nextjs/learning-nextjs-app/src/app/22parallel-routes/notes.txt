@@ -1,0 +1,17 @@
+Parallel Routes
+
+1. Each slot can essentially function as a mini-applicaiton, complete with its own navigation and state management.
+
+2. Users can interact with each section separetely, apply filters, sort data, or navigating through pages without 
+affecting the other pages.
+
+3. For example users can interact with notifications to see olders messages and parallely update url so that user 
+can track their location in the app.
+
+Unmatched Parallel Routes
+
+1. When we are navigating to another route of one particular slot, the rest of the slots shows the content as remain
+
+2. but when we reload the page it shows page not found error.
+
+3. Always maintain a default.tsx file as a fallback and this content will be shown as default.

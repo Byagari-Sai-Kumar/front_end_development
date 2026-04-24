@@ -1,0 +1,18 @@
+1. Metadata API in next js is a powerful feature that lets us define Metadata for each page.
+
+2. Metadata ensures our content looks great when it is shared or indexed by search engines.
+
+There are two ways to handle Metadata in layout.tsx or page.tsx
+
+1. export a static Metadata object.
+
+2. export a dynamic generatedMetadata function.
+
+Rules:
+
+1. Both layout and page .tsx files can able to export Metadata.
+
+2. Metadata can be defined in the children pages as well and root layout Metadata is overriden by children Metadata.
+
+3. Client components cannot use Metadata. components Metadata should always pre loaded 
+and then only the component should load.

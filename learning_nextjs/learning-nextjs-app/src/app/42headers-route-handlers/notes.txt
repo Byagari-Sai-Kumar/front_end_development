@@ -1,0 +1,22 @@
+Headers in route handlers
+
+HTTP headers represents metadata associated with the api request and response.
+
+Request Headers:
+
+1. These are sent by client, such as web browser to the server. 
+
+2. They contain essential information about request which helps the server to understand and process.
+
+3. User-Agent - which identifies the browser and operating system to the server.
+
+4. Accept - which indicates the content types like text, video or image formats that the client can process.
+
+5. Authorization - header used by the client to authenticate itself to the server.
+
+Response Headers:
+
+1. These are sent back from the server to the client. They provide info about server and the data being sent.
+
+2. 'Content-Type': header which indicates the data type of the returned content is, such as text/plain, text/html,
+application/json for json data.

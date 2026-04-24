@@ -1,0 +1,5 @@
+1. We can access params, searchParams from the url
+
+2. Async operations can only be done at server components. when we try to "use client" this is not allowed.
+
+3. 
