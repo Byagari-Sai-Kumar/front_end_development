@@ -1,0 +1,21 @@
+*Static Rendering.
+
+1. Static rendering is a server rendering strategy where we generate the html pages when building the application.
+
+2. Think of it like preparing all your content in advance. before user visit.
+
+3. Once build these pages can be then cached using CDN's and served instantly to the users.
+
+4. Suitable for blog pages, e-commerce product listings.
+
+5. Static rendering is the default strategy in the app router. saying all the routes are prepared at the build time automatically.
+
+*Production and Dev Servers
+
+1. In the production we will once build the optimized build and then deploy it. 
+
+2. But in the development server focus on the developer experience. so the pages are pre-rendered on every request.
+
+production -- pages pre-rendered once during build time
+
+development --  pages pre-render on every request.

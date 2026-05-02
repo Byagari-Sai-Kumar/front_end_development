@@ -1,0 +1,24 @@
+*Server Components
+
+1. In next.js by default all the components are server components.
+
+2. When we create a simple about page components this is also a server component. when we use console.log(), in the browser
+it will show a server tag.
+
+3. Server component has direct access to the db, and server related resources.
+
+4. These components dont have access to client side resources such as state management. useState.
+
+## Error Message
+You're importing a module that depends on `useState` into a React Server Component module. This API is only 
+available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+
+*Client Components
+
+1. Always mention "use client" directive to tell next.js this is a client component.
+
+2. Client components have all the access to browser api's and state management.
+
+3. The default behaviour is on the first initial load the component will load in the client only.
+But when we reload/refresh the component will once load on the server and then on the client for fast component loading.

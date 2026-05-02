@@ -1,0 +1,4 @@
+1. Middleware acts as a middle agent when routing.
+
+2. create a proxy.ts file in src/ and define the proxy()
+

@@ -1,0 +1,27 @@
+*React Server Components.
+
+Initial Load
+
+1. Client/Browser request to the next.js
+
+2. Next.js matches the url and render sc and tell react to build server components payload + client components instructions.
+
+3. Next.js receives payload and generates html for server components.
+
+4. Sends this server components generates html + client component instructions to client (Non interactive UI).
+
+5. client will render server component and client components.
+
+6. client will also hydrate the client components. (Interactive UI).
+
+Reload
+
+1. Client request the next.js and next.js matches the url
+
+2. Next.js tell react to render server components
+
+3. react will render server components tree + client components and give payload to next.js
+
+4. Here again the html page will not generated. next.js directly give this server component payload to Browser
+
+5. borwser will route render and and redirect to the already built ui and show updated ui.

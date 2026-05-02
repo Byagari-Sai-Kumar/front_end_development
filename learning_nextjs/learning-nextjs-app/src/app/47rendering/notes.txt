@@ -1,0 +1,242 @@
+Rendering.
+
+1. Rendering is the process of transforming the component code you write into user interface that user interact.
+
+2. In next.js the tricky part is to build a performant application is figuring out when and where the transformation
+should happen
+
+3. Next.js is built top on React.js.
+
+Understanding React traditional way of rendering and how it evolved.
+
+*Client-Side-Rendering (CSR)
+
+1. React was primarily build of Single Page Application (SPA). 
+
+2. In SPA client request the server and server will respond or send a single div tag container with a js bundle 
+reference to the browser.
+
+3. browser now download all the js bundle and then start building the UI on the browser side.
+
+Drawbacks of SPA
+
+1. SEO : When search engines look for your website then mainly look for html content. Since in SPA only the empty div tag
+is been sent to browser seo unable to process or handle or work on this or figure out what is your page is about.
+When you have lots of components and many api calls to do, it would require time to render. and seo cant even catch them.
+
+2. Performance: Browser is doing lot of things, fetching data, building UI, adding interactivity. and this end up users
+look at loading spinners till the ui is fully built and showns. Everytime a new feature adds the js bundle is getting even
+more bigger and causing mainly problem for the users with slow internet connection.
+
+*Server-Side-Rendering (SSR)
+
+1. SSR is a evolving approach where server will only built the initial hmtl content instead of empty div tag and then 
+send this initial html content + js bundle to the browser.
+
+2. Now browser immediately have the html content and seo can now search and figure out our application.
+
+3. Loading spinners now reduced their time and users could able to view the initial ui faster.
+
+Drawbacks of SSR:
+
+1. SSR will only generate the initial hmtl content. it will send this html + js bundle to the browser.
+the initial page does not have user interaction part. this ui interaction will be build by the browser.
+
+*Hydration: 
+
+1. Hydration means a initial static hmtl page without any interaction is been brought to live.
+
+2. React takes control on the browser and reconstruct the initial tree in the memory, using SSR's initial page as a blueprint.
+
+3. It carefully looks where the interaction elements should go and hooks up the js logic.
+
+4. In this phase application state, event handlers, and setting up all the dynamic features needed for the user interaction
+are setup.
+
+*Static Site Generation (SSG)
+
+1. SSG happens during build time when you deploy your application to the server. 
+
+2. The static html files are created during the build time only and then stored on the server.
+
+3. Now when a user request again the server will not generate these files. instead it will serve directly.
+
+4. On other hand SSR will render the pages on demand. It's ideal for personlized content like social media 
+feeds where the html content may change based on who logged in.
+
+Drawbacks of SSR:
+
+Building components cannot wait for data fetching:
+
+1. Components cannot start render, then stop for any data need to be fetched from api and than resume rendering.
+this cannot be possible.
+
+2. So what ever the data that is required for a component to be build, should be fetched before only.
+
+Delay in Performance
+
+3. This increases the delay for components to be built at server side.
+
+Hydration component tree should match the server-rendered tree.
+
+4. For successful Hydration where react adds interactivity to the server-rendered html, the component tree in the browser
+should exactly match the server-generated component tree.
+
+5. This means all the js required for a component should load on the client before you can start hydration any item.
+
+Hyderate everything even to use onething
+
+6. React hydrates the components in a single phase. meaning once it started it will hydrate the entire component tree.
+
+7. With this even to interact with one component react should complete hydration all the components.
+
+All or nothing waterfall:
+
+1. We cannot start,resume component rendering before data fetching. 
+
+2. All the js should load on the client before starting hydration.
+
+3. Every component needs to be hydrated even if one of them need to be interacted.
+
+
+*Suspense SSR Architecture
+
+1. React tells the server instead of sending all the completed rendered components, its ok to send which ever are completed.
+React will show the loading spinner for that pending component and rest of them are ready to use. Once the component is 
+ready then server will send that one component with its small js bundle to the client and react knowns exactly where to place it.
+
+<Layout>
+    <Header/>
+    <Suspense fallback={<Spinner/>}>
+        <MainContent/>
+    <Suspense/>
+    <Sidenav/>
+    <Footer/>
+<Layout/>
+
+by the time react loads all these remaining components, server will be sending the next completed component.
+
+2. Code splitting: 
+Even though all the components reaching client one by one here hydration cannot to be started. because hydration needs
+all the js to be loading to start.
+
+This code splitting tells your bundler "These parts of the code aren't urgent - split them into separate script."
+
+Here the main section js script will be separated and rest of the bundle is sent to the browser. and now browser has 
+most of the js bundle data and ready to hydrate.
+
+React.lazy for code splitting.
+
+*Selective Hydration
+
+1. By wrapping main section component with <Suspense> component, you are not just enabling streaming but also telling
+react its ok to start hydrating other parts before everything is ready.
+
+2. This is called Selective Hydration.
+
+3. It allows hydration of the parts of the page as they become available, even before rest of the html and js code are fully downloaded.
+
+4. Now the users can interact with the other parts of the page like headers, sidebar without waiting for the interacting of
+main page.
+
+5. This also prioritize the hydration. if there are sidebar and main content need to be hydrated and user trying to click on 
+main section then react immediately switchs to main content and try to finish this hydration. 
+
+
+*Drawbacks for Suspense Architecture
+
+1. Even though we are sending js bundle bit by bit to the browser to hydrate, the browser end up downloading all the js code 
+for the webpage.
+
+2. As we keep adding features the code keeps growing.
+
+Do users or browser really needs to download all the data?
+
+3. React is hydrating all the components even which are not required for interaction.
+
+Should all the components need to be hydrated, even those that dont need to be interacted??
+
+4. even though servers are good enough to handle heavy processing. we are still making user's devices do bulk
+of the js work.
+
+This can slow down devices which are less powerfull.
+
+Shouldn't we be leveraging our servers more?    
+
+
+The Evolution of React
+
+CSR ----> SSR ------> Suspense for SSR
+
+Challenges:
+
+1. Large bundle sizes causing excessive download size for users
+
+2. Unneccesary hydaratin delays
+
+3. Heavy client side rendering causing poor performance.
+
+* React Server Components (RSC)
+
+1. React server components (RSC) represents a new architecture design by the react team.
+
+2. This approach leverages the strength of both servers and clients to opitimize efficiency, load times and interactivity.
+
+This architecture introduced DUAL-COMPONENT MODEL
+
+1. Client components
+2. Server components
+
+*Client Components
+
+1. Client Components are familiar to React components we've have been using.
+
+2. They are typically rendered on the client side (CSR) but they can also be rendered to the HTML server, allowing
+users to see the page's html content rather than a blank screen.
+
+3. Client components can also be rendered on the server.
+
+4. Client components are primarily operates on client but/should can also run once on the server for better performance.
+
+5. Client components have full access to the client environment. such as browser allowing them to use state, effects,
+and event handlers for handling interactivity.
+
+6. They can also access browser exlusive api's such as geolocation or local storage, allowing you to build UI for specific
+reason.
+
+7. Infact client components are not any new things, these only help us differentiate from server components.
+
+*Server Components 
+
+1. Server components are new type of react components specifically designed to operate exclusively on the server.
+
+2. Their code stays on the server and never downloaded to client.
+
+3. This design choise gives multiple benefits to react applications.
+
+Advantages:
+
+1. Smaller bundle size. Since all the code stays on the server, all their dependencies stays on the server too.
+so no need of the browser to downlaod their js bundle and parse,execucte etc. Also with this no need of hydration, makeing your app laod and become interactive faster.
+
+2. Direct access to server resources: Server components can directly interact with databases, file systems, making
+data fetching super efficient without any client side processing. They use servers power and proximity to data sourcing
+to manage compoute intensive rendering task.
+
+3. Enhanced Security: since server components only runs on server, sensitive data and api keys, tokens never leave server.
+
+4. Improve data fetching: Server components allow you to move data fetching to the server. closer to your data source.
+This can improve performance by reducing the time taking to fetch data needed for rendering. and the no of request 
+client needs to make.
+
+5. Caching:  When you render on the server, server can cache data and reuse them. so no need to fetch, calculate
+the data all the time.
+
+6. Faster Initial page load and first contentful page: By generating html on the server, users see your content immediately
+no waiting for js to downlaod and execute.
+
+7. Improved SEO: now the search engines can easily index your pages and process on it.
+
+With these RSC server components are responsible for data fetching and static rendering while client components are responsible
+for page interactions using most of the both client and server resources efficiently while using single language, framework and 
+set of api's
